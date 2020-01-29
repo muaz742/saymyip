@@ -2,9 +2,9 @@ console.log("Hi");
 console.log('If you want JSON format, you can use "http://muaz742.com/saymyip?f=json" syntax');
 
 function updateIpAdress() {
-    $.getJSON( "http://muaz742.com/saymyip?f=json", function( data ) {
+    $.getJSON( "https://ipinfo.io/json", function( data ) {
         JSON.stringify(data);
-        document.getElementById("ipAdress").innerText = data.ipAdress;
+        document.getElementById("ipAdress").innerText = data.ip;
     });
 }
 
