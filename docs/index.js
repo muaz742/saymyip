@@ -1,6 +1,5 @@
 console.log("Hi");
 console.log('If you want JSON format, you can use "http://muaz742.com/saymyip?f=json" syntax');
-var ipAdress = document.getElementById("ipAdress").textContent;
 
 function updateIpAdress() {
     $.getJSON( "http://muaz742.com/saymyip?f=json", function( data ) {
@@ -8,6 +7,10 @@ function updateIpAdress() {
         document.getElementById("ipAdress").innerText = data.ipAdress;
     });
 }
+
+updateIpAdress();
+
+var ipAdress = document.getElementById("ipAdress").textContent;
 
 function copy() {
     copyToClipboard(ipAdress);
