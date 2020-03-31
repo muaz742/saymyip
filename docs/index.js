@@ -10,9 +10,8 @@ function updateIpAdress() {
 
 updateIpAdress();
 
-var ipAdress = document.getElementById("ipAdress").textContent;
-
 function copy() {
+    var ipAdress = document.getElementById("ipAdress").textContent;
     copyToClipboard(ipAdress);
     Toast.fire({
         title: 'copy to clipboard 👍'
